@@ -17,11 +17,11 @@ def predict():
 
     output = prediction[0]
     if (output == 0):
-        output = 'setosa'
+        output = 'Setosa'
     elif (output == 1):
-        output = 'versicolor'
+        output = 'Versicolor'
     else:
-        output = 'virginica'
+        output = 'Virginica'
     return render_template('index.html',prediction_text='Species is {}'.format(output))
     
 if __name__ == "__main__":
